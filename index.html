@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcoBite — EAT CLEAN. BARK GREEN.</title>
+  <meta name="description" content="EcoBite — ração e produtos sustentáveis feitos a partir de excedentes alimentares. Rastreabilidade, ciência e impacto social." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --blue:#0033A8;
+      --blue-dark:#002366;
+      --yellow:#FFF36B;
+      --bg:#FEFEFF;
+    }
+    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;}
+    h1,h2,h3{font-family:Poppins,Inter,Arial;}
+    a{transition:all .18s ease}
+    .brand-btn{background:linear-gradient(90deg,var(--blue),var(--blue-dark));}
+  </style>
+</head>
+<body class="bg-[var(--bg)] text-[#0f172a] antialiased">
+
+  <!-- NAV -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-sm shadow-sm">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/logo-dog.png" alt="EcoBite logo" class="h-12 w-auto object-contain"/>
+        <div class="hidden sm:block">
+          <div class="text-sm font-semibold" style="color:var(--blue)">EcoBite</div>
+          <div class="text-xs text-[#374151]">EAT CLEAN. BARK GREEN.</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex gap-6 items-center text-sm">
+        <a href="about.html" class="hover:text-[var(--blue)]">Quem somos</a>
+        <a href="mission.html" class="hover:text-[var(--blue)]">Missão</a>
+        <a href="products.html" class="hover:text-[var(--blue)]">Produtos</a>
+        <a href="trace.html" class="hover:text-[var(--blue)]">Rastreabilidade</a>
+        <a href="contact.html" class="bg-[var(--yellow)] text-[var(--blue-dark)] px-3 py-2 rounded-md font-semibold">Contacto</a>
+      </nav>
+
+      <button id="mobileBtn" class="md:hidden p-2">☰</button>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <div id="mobileMenu" class="hidden fixed top-16 left-0 right-0 bg-white z-40 shadow-md">
+    <div class="max-w-6xl mx-auto p-4 flex flex-col">
+      <a href="about.html" class="py-2 border-b">Quem somos</a>
+      <a href="mission.html" class="py-2 border-b">Missão</a>
+      <a href="products.html" class="py-2 border-b">Produtos</a>
+      <a href="trace.html" class="py-2 border-b">Rastreabilidade</a>
+      <a href="contact.html" class="py-2 font-semibold">Contacto</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <main class="pt-28">
+    <section class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold" style="color:var(--blue)"><span style="background:linear-gradient(90deg,var(--yellow),transparent);padding:0 4px;">EAT CLEAN.</span> <span style="color:var(--blue-dark)">BARK GREEN.</span></h1>
+        <p class="mt-5 text-lg text-[#374151]">EcoBite transforma excedentes alimentares em ração, snacks e brinquedos sustentáveis. Rastreabilidade por lote, formulações validadas por veterinários e parcerias locais.</p>
+
+        <div class="mt-8 flex gap-3">
+          <a href="products.html" class="inline-block brand-btn text-white px-6 py-3 rounded-lg font-semibold shadow">Ver Produtos</a>
+          <a href="trace.html" class="inline-block border border-[var(--blue)] text-[var(--blue)] px-6 py-3 rounded-lg font-semibold">Rastrear um lote</a>
+        </div>
+
+        <div class="mt-8 grid grid-cols-3 gap-3 text-sm">
+          <div class="p-4 bg-white rounded-lg shadow">
+            <strong class="text-[var(--blue)]">100% rastreável</strong>
+            <p class="text-[#6b7280] mt-1">QR por lote</p>
+          </div>
+          <div class="p-4 bg-white rounded-lg shadow">
+            <strong class="text-[var(--blue)]">Formulado por vets</strong>
+            <p class="text-[#6b7280] mt-1">Segurança e nutrição</p>
+          </div>
+          <div class="p-4 bg-white rounded-lg shadow">
+            <strong class="text-[var(--blue)]">Impacto social</strong>
+            <p class="text-[#6b7280] mt-1">Parcerias com ONGs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="rounded-3xl overflow-hidden shadow-2xl">
+          <img src="https://images.unsplash.com/photo-1507149833265-60c372daea22?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=18d0ed3d5d5b1b6c8fbd3b2ad8b7d9ce" alt="cão feliz" class="w-full h-96 object-cover">
+        </div>
+        <div class="absolute -bottom-6 left-6 bg-[var(--yellow)] rounded-xl p-3 shadow">
+          <p class="text-sm text-[var(--blue-dark)]">Exemplo: Lote EB2025-0034 • 65 kg salvos • CO₂ evitado: 120 kg</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE BANNER -->
+    <section class="max-w-6xl mx-auto px-6 py-8 mb-12">
+      <div class="bg-white rounded-2xl p-8 shadow grid md:grid-cols-3 gap-6">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-lg bg-[var(--yellow)] flex items-center justify-center text-[var(--blue-dark)] font-bold">✓</div>
+          <div>
+            <h4 class="font-semibold text-[var(--blue-dark)]">Transparência total</h4>
+            <p class="text-sm text-[#6b7280] mt-1">Relatórios por lote e certificados públicos.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-lg bg-[var(--yellow)] flex items-center justify-center text-[var(--blue-dark)] font-bold">⚕️</div>
+          <div>
+            <h4 class="font-semibold text-[var(--blue-dark)]">Rigor científico</h4>
+            <p class="text-sm text-[#6b7280] mt-1">Análises e formulações feitas por veterinários.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-lg bg-[var(--yellow)] flex items-center justify-center text-[var(--blue-dark)] font-bold">♻</div>
+          <div>
+            <h4 class="font-semibold text-[var(--blue-dark)]">Economia circular</h4>
+            <p class="text-sm text-[#6b7280] mt-1">Fechado localmente com produtores e abrigos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="max-w-6xl mx-auto px-6 py-8">
+      <div class="bg-[var(--blue)] text-white p-8 rounded-2xl shadow-lg flex flex-col md:flex-row justify-between items-center gap-6">
+        <div>
+          <h3 class="text-2xl font-bold">Queres ver um lote ao vivo?</h3>
+          <p class="mt-2 text-sm text-white/90">Escaneia o QR na embalagem ou clica em “Rastrear um lote”.</p>
+        </div>
+        <div>
+          <a href="trace.html" class="bg-[var(--yellow)] text-[var(--blue-dark)] px-5 py-3 rounded-lg font-semibold shadow">Rastrear um Lote</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="mt-12 py-8 bg-white border-t">
+    <div class="max-w-6xl mx-auto px-6 text-center text-sm text-[#6b7280]">
+      © 2025 EcoBite • EAT CLEAN. BARK GREEN.
+    </div>
+  </footer>
+
+  <script>
+    // mobile menu
+    document.getElementById('mobileBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
